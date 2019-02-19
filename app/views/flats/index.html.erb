@@ -1,0 +1,8 @@
+<h1>Flats</h1>
+<ul>
+  <%@flats.each do |flat| %>
+    <li><%=flat['name']  %></li>
+    <li><%=flat['price']  %></li>
+    <li><%= image_tag flat['imageUrl'], style: 'width: 400px'  %></li>
+  <%end%>
+</ul>
